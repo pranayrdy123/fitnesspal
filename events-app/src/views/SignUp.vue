@@ -5,6 +5,8 @@
 
     <div class="whole">
 
+
+
         <div class="field">
   <label class="label">Name</label>
   <div class="control">
@@ -42,11 +44,11 @@
     <div class="control">
   <label class="radio">
     <input type="radio" name="answer">
-    Yes
+    Male
   </label>
   <label class="radio">
     <input type="radio" name="answer">
-    No
+    Female
   </label>
 </div>
 

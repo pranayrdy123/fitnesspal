@@ -1,5 +1,16 @@
 <template>
+
     <div class="basic">
+        <div class="field has-addons">
+  <div class="control">
+    <input class="input" type="text" placeholder="Find a Food">
+  </div>
+  <div class="control">
+    <a class="button is-info">
+      Search
+    </a>
+  </div>
+</div>
         <h1 class="info is-l">
            Food Analysis
         </h1>

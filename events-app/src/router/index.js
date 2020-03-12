@@ -34,17 +34,9 @@ export default new Router({
       name: 'Exercise',
       component: () => import('../views/Exercise.vue')
     },
-    {
-      path: '/event/:id',
-      name: 'eventSingle',
-      component: () => import('../views/EventSingle.vue')
-    },
+    
     { path: '/login', name: 'Login', component: Login },
     
-    {
-      path: '/event/:id',
-      name: 'eventSingle',
-      component: () => import('../views/EventSingle.vue')
-    }
-  ]
+  ]  
+  
 });
