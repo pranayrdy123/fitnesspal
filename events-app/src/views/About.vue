@@ -18,7 +18,7 @@ At Fitness Buddy, we focus on making sure you can log your meals as quickly and 
 </template>
 <style lang="scss" scoped>
   .org-description {
-    margin-top: 150px;
+    margin-top: 10px;
     margin-left: 150px;
     margin-Right: 150px;
     margin-right: 150px;
