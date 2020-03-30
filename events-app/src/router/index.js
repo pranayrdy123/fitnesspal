@@ -3,6 +3,11 @@ import Router from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue';
 
+// const express= require(express);
+// const app=express();
+// app.listen(3000, () => Console.log('im listening'));
+
+
 Vue.use(Router)
 
 export default new Router({
