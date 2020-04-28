@@ -25,6 +25,13 @@
   <footer class="card-footer">
     <p class="card-footer-item">
       <span>
+        
+        share on<a href="https://twitter.com/intent/tweet?text=Buddy is the best fitness App ever…. It helped me so much. I want everyone one of you to give it a try" target="_blank"> <span class="icon"><i class="fa fa-twitter"></i></span> <span>Twitter</span> </a>
+
+      </span>
+    </p>
+    <p class="card-footer-item">
+      <span>
         View on <a href="https://twitter.com/codinghorror/status/506010907021828096">Twitter</a>
       </span>
     </p>
@@ -33,6 +40,7 @@
         Share on <a href="https://www.facebook.com/myfitnesspal/">Facebook</a>
       </span>
     </p>
+    
   </footer>
 </div>
 

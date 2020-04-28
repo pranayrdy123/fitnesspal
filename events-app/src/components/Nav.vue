@@ -16,6 +16,7 @@
       <router-link to="/about" class="navbar-item">About</router-link>
       <router-link to="/Food" class="navbar-item">Food</router-link>
       <router-link to="/Exercise" class="navbar-item">Exercise</router-link>
+      <router-link to="/BMICalculator" class="navbar-item">BMI Calculator</router-link>
     </div>
     <div class="navbar-end">
       <div class="navbar-item">
