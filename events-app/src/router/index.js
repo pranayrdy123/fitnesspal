@@ -41,6 +41,11 @@ export default new Router({
       component: () => import('../views/Exercise.vue')
     },
     {
+      path: '/register',
+      name: 'register',
+      component: () => import('../views/register.vue')
+    },
+    {
       path: '/Calculator',
       name: 'Calculator',
       component: () => import('../components/Calculator.vue')
