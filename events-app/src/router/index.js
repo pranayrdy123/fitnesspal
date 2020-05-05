@@ -41,9 +41,9 @@ export default new Router({
       component: () => import('../views/Exercise.vue')
     },
     {
-      path: '/bmiCalculator',
-      name: 'BMICalculator',
-      component: () => import('../views/bmiCalculator.vue')
+      path: '/Calculator',
+      name: 'Calculator',
+      component: () => import('../components/Calculator.vue')
     },
     //{ path: '/bmiCalculator', name: 'bmiCalculator', component: bmiCalculator },
     
