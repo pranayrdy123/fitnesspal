@@ -9,9 +9,9 @@
               Have an account?
             </router-link>
           </p>
-          <ul v-if="errors" class="error-messages">
+          <!-- <ul v-if="errors" class="error-messages">
             <li v-for="(v, k) in errors" :key="k">{{ k }} {{ v | error }}</li>
-          </ul>
+          </ul> -->
           <form @submit.prevent="register">
             <fieldset class="form-group">
               <input
@@ -98,7 +98,7 @@ export default {
   },
   methods: {
     register() {
-      axios.post('.../users/register',
+      axios.post('http://localhost:5000/users/register',
         {
           first_name: this.first_name,
           last_name: this.last_name,

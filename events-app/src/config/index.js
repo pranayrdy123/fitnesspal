@@ -15,7 +15,7 @@ module.exports = {
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     proxyTable: {
       '/users': {
-        target: 'http://localhost:5003',
+        target: 'http://localhost:5000',
         changeOrigin: true
       }
     },
