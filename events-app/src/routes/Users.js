@@ -1,8 +1,8 @@
 const express = require('express')
 const users = express.Router()
 const cors = require('cors')
-//const jwt = require('jsonwebtoken')
-//const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt')
 
 const User = require('/Users/Shared/fitnesspal-3/events-app/src/models/User.js')
 users.use(cors())

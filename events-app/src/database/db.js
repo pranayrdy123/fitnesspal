@@ -3,7 +3,7 @@ const db = {}
 const sequelize = new Sequelize('myfitness', 'root', '6packbody', {
   host: 'localhost',
   dialect: 'mysql',
-  operatorsAliases: false,
+  operatorsAliases: 1,
 
   pool: {
     max: 5,

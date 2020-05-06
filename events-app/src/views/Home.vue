@@ -7,7 +7,7 @@
           Your Fitness Journey Starts Today     
         </h1>
           <div class="button-block">
-          <a href="/SignUp" class="button is-xl is-dark">Start for Free</a>
+          <a href="/register" class="button is-xl is-dark">Start for Free</a>
          
         </div>
       </div>
@@ -48,7 +48,7 @@
 <div class="cardle">
   <div class="card-image">
     <figure class="image is-4by3">
-      <img src="https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/45163788_1947924921971802_9004415510342795264_n.jpg?_nc_cat=104&_nc_sid=85a577&_nc_ohc=BgOdcoBsEWoAX-L2QHS&_nc_ht=scontent-iad3-1.xx&oh=7ca265e1633420b737567422478431b9&oe=5E8FF860" alt="Placeholder image">
+      <img src="https://i.insider.com/5b43ccf31335b831008b4c1c?width=1136&format=jpeg" alt="Placeholder image">
     </figure>
   </div>
   <div class="card-content">
