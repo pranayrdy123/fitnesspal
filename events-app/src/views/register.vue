@@ -5,20 +5,28 @@
         <div class="col-md-6 offset-md-3 col-xs-12">
           <h1 class="text-xs-center">Sign up</h1>
           <p class="text-xs-center">
-            <router-link :to="{ name: 'login' }">
+            <router-link :to="{ name: 'Login' }">
               Have an account?
             </router-link>
           </p>
           <ul v-if="errors" class="error-messages">
             <li v-for="(v, k) in errors" :key="k">{{ k }} {{ v | error }}</li>
           </ul>
-          <form @submit.prevent="onSubmit">
+          <form @submit.prevent="register">
             <fieldset class="form-group">
               <input
                 class="form-control form-control-lg"
                 type="text"
-                v-model="username"
-                placeholder="Username"
+                v-model="first_name"
+                placeholder="FirstName"
+              />
+            </fieldset>
+            <fieldset class="form-group">
+              <input
+                class="form-control form-control-lg"
+                type="text"
+                v-model="last_name"
+                placeholder="LastName"
               />
             </fieldset>
             <fieldset class="form-group">
@@ -47,7 +55,7 @@
   </div>
 </template>
 
-// <script>
+ <script>
 // import { mapState } from "vuex";
 // import { REGISTER } from "@/store/actions.type";
 
@@ -77,7 +85,37 @@
 //     }
 //   }
 // };
-// </script>
+import axios from 'axios'
+import router from '../router'
+export default {
+  data () {
+    return {
+      first_name: '',
+      last_name: '',
+      email: '',
+      password: ''
+    }
+  },
+  methods: {
+    register() {
+      axios.post('.../users/register',
+        {
+          first_name: this.first_name,
+          last_name: this.last_name,
+          email: this.email,
+          password: this.password
+        }
+      ).then((res) => {
+        router.push({ name: 'Login' })
+        console.log(res)
+      }).catch((err) => {
+        console.log(err)
+      })
+    }
+  }
+}
+
+</script>
 <style>
 .wholething{
   font-size: 300%;
