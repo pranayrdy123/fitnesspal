@@ -11,9 +11,9 @@
   </div>
      <div>
      </div>
-  
+
 <div>
-  <div class="select is-rounded">
+  <!-- <div class="select is-rounded">
   <select>
     <option>or select from here</option>
     <option>Swimming</option>
@@ -22,7 +22,7 @@
     <option>squats</option>
     <option>Swimming</option>
   </select>
-</div>
+</div> -->
 <div>
 <figure class="image is-sm">
   <img src="https://images-na.ssl-images-amazon.com/images/I/81KjDc1kVAL._AC_SL1500_.jpg">
