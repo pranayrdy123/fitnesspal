@@ -47,8 +47,10 @@ app.use(
 )
 
 var Users = require('/Users/Shared/fitnesspal-3/events-app/src/routes/Users.js')
+var foods = require('/Users/Shared/fitnesspal-3/events-app/src/routes/foods.js')
 
 app.use('/users', Users)
+app.use('/foods', foods)
 
 app.listen(port, () => {
   console.log('Server is running on port: ' + port)

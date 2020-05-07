@@ -19,6 +19,12 @@ module.exports = {
         changeOrigin: true
       }
     },
+    proxyTable: {
+      '/foods': {
+        target: 'http://localhost:5000',
+        changeOrigin: true
+      }
+    },
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
