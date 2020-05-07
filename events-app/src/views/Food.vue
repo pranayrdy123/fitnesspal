@@ -26,9 +26,9 @@
     <input class="input" type="text" name="food_name" placeholder="Find a Food" v-model="food_name">
   </div>
   <div class="control">
-    <a class="button is-info" type="submit">
+    <button class="button is-info" type="submit">
       Search
-    </a>
+    </button>
   </div>
 </div>
 </form>

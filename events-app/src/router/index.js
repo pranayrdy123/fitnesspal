@@ -61,7 +61,11 @@ export default new Router({
       name: 'FoodCalorie',
       component: () => import('../views/FoodCalorie.vue')
     },
-    
+    {
+      path: '/ExerciseCount',
+      name: 'ExerciseCount',
+      component: () => import('../views/ExerciseCount.vue')
+    },
     //{ path: '/login', name: 'Login', component: Login },
     
   ]  

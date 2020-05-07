@@ -1,13 +1,15 @@
  <template>
      <div class="field-me has-addons">
+       <form class="container" @submit.prevent="search">
   <div class="control">
+    
     <p>Search an exercise from our database by name</p>
-    <input class="input" type="text" placeholder="Find an Exercise">
+    <input class="input" type="text" placeholder="Find an Exercise" v-model="exercise_name">
   </div>
   <div class="control">
-    <a class="button is-info">
+    <button class="button is-info">
       Search
-    </a>
+    </button>
   </div>
      <div>
      </div>
@@ -29,6 +31,7 @@
 </figure>
 </div>
 </div>
+</form>
 </div>
 </template>
 <style scoped>
@@ -36,3 +39,38 @@
   align-content: center;
 }
 </style>
+<script>
+
+
+import axios from 'axios'
+import router from '../router'
+import EventBus from './EventBus'
+export default {
+  data () {
+    return {
+      exercise_name: ''
+    }
+  },
+  methods: {
+    search() {
+      axios.post('http://localhost:5000/exercises/search',
+        {
+          exercise_name: this.exercise_name
+        }
+      ).then((res) => {
+        localStorage.setItem('usertoken', res.data)
+        this.exercise_name = ''
+        router.push({ name: 'ExerciseCount' })
+      }).catch((err) => {
+        console.log(err)
+      })
+      this.emitMethod()
+    },
+    emitMethod () {
+      EventBus.$emit('logged-in', 'loggedin')
+    }
+  }
+}
+
+
+</script>
