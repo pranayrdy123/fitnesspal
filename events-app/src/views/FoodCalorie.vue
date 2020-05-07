@@ -10,25 +10,36 @@
     <div class="short">Carbs</div>
     <div class="short">Protein</div>
   </div>
-  <!-- <div class="entry" v-for="entry in entries" transition="fade">
-    <input type="text" name="description-{{ entry.id }}" v-model="entry.description" class="long" v-on:keyup.enter="saveEntry">
-    <input type="number" name="calories-{{ entry.id }}" v-model="entry.calories" class="short" v-on:keyup.enter="saveEntry">
-    <input type="number" name="fat-{{ entry.id }}" v-model="entry.fat" class="short" v-on:keyup.enter="saveEntry">
-    <input type="number" name="carbs-{{ entry.id }}" v-model="entry.carbs" class="short" v-on:keyup.enter="saveEntry">
-    <input type="number" name="protein-{{ entry.id }}" v-model="entry.protein" class="short" v-on:keyup.enter="saveEntry">
-    <button class="material-delete" v-on:click="removeEntry($index)">
-      <i class="fa fa-plus"></i>
-    </button>
-  </div> -->
+ <div>
+   <h1>----------------------</h1>
+ </div>
   <div class="totals">
     <div class="short">{{ food_name }}</div>
-    <div class="short">{{ Calories }}</div>
+    <div class="short">{{ calories }}</div>
     <div class="short">{{ fat }}</div>
     <div class="short">{{ carbs }}</div>
-    <div class="short">{{ protein }}</div>
+    <div class="short">{{ protien }}</div>
   </div>
   
 </div>
 
 </template>
+
+<script>
+  import jwtDecode from 'jwt-decode'
+export default {
+  data () {
+    const token = localStorage.usertoken
+    const decoded = jwtDecode(token)
+    return {
+      food_name: decoded.food_name,
+      calories: decoded.calories,
+      fat: decoded.fat,
+      carbs: decoded.carbs,
+      protien: decoded.protien, 
+    }
+  }
+}
+
+</script>
 

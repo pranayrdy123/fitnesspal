@@ -1,8 +1,8 @@
 <template>
 
     <div class="basic">
-      <form >
-        <table class="table col-md-6 mx-auto">
+      <form class="container" @submit.prevent="search">
+        <!-- <table class="table col-md-6 mx-auto">
         <tbody>
           <tr>
             <td>Fist Name</td>
@@ -17,7 +17,7 @@
             <td>{{email}}</td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
       
         <div class="field has-addons">
           
@@ -26,11 +26,12 @@
     <input class="input" type="text" name="food_name" placeholder="Find a Food" v-model="food_name">
   </div>
   <div class="control">
-    <a class="button is-info">
+    <a class="button is-info" type="submit">
       Search
     </a>
   </div>
 </div>
+</form>
 
         <h1 class="info is-l">
            Food Analysis
@@ -42,7 +43,7 @@ Understand how the food you’re eating contributes to your daily calories, macr
         <figure class="image is-sm">
   <img src="https://www.101fitness.org/wp-content/uploads/2017/03/shutterstock_540997561.jpg">
 </figure>
- </form>
+ 
     </div>
 
 
