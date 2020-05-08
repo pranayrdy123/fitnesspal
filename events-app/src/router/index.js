@@ -66,6 +66,12 @@ export default new Router({
       name: 'ExerciseCount',
       component: () => import('../views/ExerciseCount.vue')
     },
+    {
+      path: '/profile',
+      name: 'profile',
+      component: () => import('../views/profile.vue')
+    },
+
     //{ path: '/login', name: 'Login', component: Login },
     
   ]  

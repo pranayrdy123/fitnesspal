@@ -73,7 +73,7 @@ export default {
         localStorage.setItem('usertoken', res.data)
         this.email = ''
         this.password = ''
-        router.push({ name: 'Food' })
+        router.push({ name: 'profile' })
       }).catch((err) => {
         console.log(err)
       })
