@@ -1,7 +1,15 @@
  <template>
+
+        
+    
      <div class="field-me has-addons">
+
+       
+       
        <form class="container" @submit.prevent="search">
   <div class="control">
+
+    
     
     <p>Search an exercise from our database by name</p>
     <input class="input" type="text" placeholder="Find an Exercise" v-model="exercise_name">
@@ -60,12 +68,14 @@ export default {
       ).then((res) => {
         localStorage.setItem('usertoken', res.data)
         this.exercise_name = ''
-        router.push({ name: 'ExerciseCount' })
+        router.push({ name: 'NewExercise' })
       }).catch((err) => {
         console.log(err)
       })
       this.emitMethod()
     },
+
+    
     emitMethod () {
       EventBus.$emit('logged-in', 'loggedin')
     }

@@ -2,7 +2,12 @@
 <template>
     
 
+   
+
+
+
 <div id="app">
+  
   <h1 class="title"><i class="fa fa-heartbeat"></i> Number of Calories burst doing the exercise per hour. </h1>
   <div class="entry header">
     <div class="short">Exercise Name</div>

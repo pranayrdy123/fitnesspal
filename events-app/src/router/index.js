@@ -71,7 +71,16 @@ export default new Router({
       name: 'profile',
       component: () => import('../views/profile.vue')
     },
-
+    {
+      path: '/NewExercise',
+      name: 'NewExercise',
+      component: () => import('../views/NewExercise.vue')
+    },
+    {
+      path: '/FoodCalorie',
+      name: 'FoodCalorie',
+      component: () => import('../views/FoodCalorie.vue')
+    },
     //{ path: '/login', name: 'Login', component: Login },
     
   ]  
